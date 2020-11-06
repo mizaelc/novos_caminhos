@@ -18,4 +18,18 @@
 function adjacentElementsProduct($inputArray)
 {
     // CÓDIGO
+    $maiorProduto = 0;
+
+    for ($i=0; $i < count($inputArray); $i++) {
+        $prod = $inputArray[$i] * $inputArray[$i+1]; 
+        if($prod > $maiorProduto){
+            $maiorProduto = $prod;
+        }
+    }
+    
+    echo "<h1>$maiorProduto</h1>";
+    // D. I<3U By: Mizael
 }
+
+$vetor = [3, 6, -2, -5, 7, 3, 9];
+adjacentElementsProduct($vetor);

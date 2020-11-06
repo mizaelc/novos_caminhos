@@ -24,5 +24,14 @@ function centuryFromYear($year)
 {
 
     // CÓDIGO ...
+    $century = $year / 100;
+    $resto = $year % 100;
+    if($resto == 0){
+        echo $century;
+    }else{
+        echo (int)$century + 1;
+    }
 
-}
+}  //<3 
+
+centuryFromYear(374);

@@ -26,3 +26,25 @@ function sortByHeight($a)
 {
     // CÓDIGO
 }
+
+echo "oi <br>";
+$a = [-1, 150, 190, 170, -1, -1, 160, 180];
+print_r($a);
+
+$chave = array();
+$valor = array();
+foreach ($a as $key => $value) {
+    if ($value == -1) {
+        $chave[$key] = $value;
+    }else{
+        $valor[$key] = $value;
+    }
+}
+
+asort($valor);
+
+echo "<br>";
+print_r($chave);
+echo "<br>";
+//$result = array_merge($chave, $valor);
+print_r($valor);

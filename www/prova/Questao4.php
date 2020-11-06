@@ -20,7 +20,34 @@
 // Gisifruno precisa de estátuas de tamanhos 4, 5 e 7
 // ou seja de três estátuas
 
-function makeArrayConsecutive2($statues)
+function makeArrayConsecutive2($estatua)
 {
-    // CÓDIGO
+    // Pegando o maior e menor numero de dentro do vetor $statues
+    $maior = max($estatua);
+    $menor = min($estatua); // rand(); gera um número aleatório 
+
+    /*foreach($statues as $v){
+        if($v > $maior){
+            $maior = $v;
+        }
+        
+        if($v < $menor){
+            $menor = $v;
+        }
+    }*/
+
+    // Cria um vetor do menor valor até o maior valor de outro array
+    $lista = array();
+    while($menor <= $maior){
+        $lista[] = $menor ;
+        $menor++;
+    }
+
+    // Verificação de existencia entre dois array
+    $falta = array_diff($lista, $estatua);
+
+    print_r(count($falta));
 }
+
+$statues = [6, 2, 3, 8];
+makeArrayConsecutive2($statues);

@@ -18,5 +18,25 @@
 
 function isLucky($n)
 {
-    // CÓDIGO
+    $t = strlen($n); // Quantidade de caracteres da string
+    $lista = str_split($n, $t/2); // Separa e cria um array com a string dividida
+
+    $p = array();
+    foreach ($lista as $key => $value) {
+        $separa = str_split($value);
+        $p[] = array_sum($separa); // soma os valores do array, nesse caso ta somando o valor dos arrays separado
+    }
+
+    //print_r($p);
+
+    if ($p[0] == $p[1]) {
+        echo "True";
+    }else{
+        echo "False";
+    }
 }
+
+echo "😜<br>";
+
+$n = (string)261534;
+isLucky($n);

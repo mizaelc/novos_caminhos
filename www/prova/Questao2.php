@@ -19,4 +19,14 @@
 function checkPalindrome($inputString)
 {
     // CÓDIGO
-}
+    $palavra = strtolower($inputString);
+    $revPalavra = strrev($palavra);
+    echo "<h1>{$revPalavra}</h1>";
+    if($palavra == $revPalavra){
+        echo "True";
+    }else{
+        echo "False";
+    }
+}// <3 
+
+checkPalindrome("coelho");

@@ -13,3 +13,9 @@ function commonCharacterCount($s1, $s2)
 {
     // CÓDIGO
 }
+
+echo "oi<br>";
+$s1 = "aabcc";
+$s2 = "adcaa";
+$similar = similar_text($s1,$s2);
+echo $similar;
