@@ -32,6 +32,6 @@ function centuryFromYear($year)
         echo (int)$century + 1;
     }
 
-}  //<3 
+}
 
 centuryFromYear(374);

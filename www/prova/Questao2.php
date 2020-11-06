@@ -27,6 +27,6 @@ function checkPalindrome($inputString)
     }else{
         echo "False";
     }
-}// <3 
+}
 
 checkPalindrome("coelho");

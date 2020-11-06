@@ -28,7 +28,6 @@ function adjacentElementsProduct($inputArray)
     }
     
     echo "<h1>$maiorProduto</h1>";
-    // D. I<3U By: Mizael
 }
 
 $vetor = [3, 6, -2, -5, 7, 3, 9];
